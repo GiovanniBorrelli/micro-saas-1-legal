@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Products Download CSV</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --text-secondary: #555555;
+    --border: #e5e5e5;
+    --accent: #059669;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0f14;
+      --text: #e8e8e8;
+      --text-secondary: #a0a0a0;
+      --border: #262b31;
+      --accent: #34d399;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    margin-top: 36px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+  p, li { color: var(--text); }
+  a { color: var(--accent); }
+  code {
+    background: rgba(127,127,127,0.15);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — Products Download CSV</h1>
+  <p class="updated">Last updated: 2026-07-17</p>
+
+  <h2>What this extension does</h2>
+  <p>
+    Products Download CSV reads product listings (title, price, rating, shop name, etc.)
+    from Etsy and Amazon search-result pages you have open, and lets you export them to a
+    CSV file saved directly to your computer.
+  </p>
+
+  <h2>Data we collect</h2>
+  <p><strong>None.</strong> This extension has no server of its own and sends no scraped
+  product data anywhere. All parsing happens locally, in your browser, on pages you are
+  already viewing.</p>
+  <p>The only data stored is kept locally on your device via the browser's <code>storage.local</code> API:</p>
+  <ul>
+    <li>Your export settings (whether to include image URLs / ad flags)</li>
+    <li>Local usage statistics (number of products exported, last export date) — used only
+      to populate the extension's popup dashboard, never transmitted anywhere</li>
+    <li>Your ExtensionPay license/subscription status (see below)</li>
+  </ul>
+  <p>You can clear this data at any time with the "Reset Stats" link in the popup, or by
+  removing the extension.</p>
+
+  <h2>Payments</h2>
+  <p>
+    Upgrading to Pro is handled entirely by
+    <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>,
+    a third-party payment processor built specifically for browser extensions (which in
+    turn uses Stripe for card processing). When you click "Go Premium", a checkout page
+    hosted on extensionpay.com opens in a new tab. We never see or store your payment
+    details — only a paid/unpaid status is read back into the extension to unlock the
+    unlimited export limit. See ExtensionPay's own privacy policy for how it handles
+    checkout data.
+  </p>
+
+  <h2>Third-party sites</h2>
+  <p>
+    The extension only activates on Etsy and Amazon search-result pages (per the
+    <code>host_permissions</code> in its manifest) and on extensionpay.com (for the
+    payment flow). It does not run on, or collect data from, any other site.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:giovanni.borrelli@multiversity.it">giovanni.borrelli@multiversity.it</a></p>
+
+  <footer>Products Download CSV — Privacy Policy</footer>
+</main>
+</body>
+</html>
